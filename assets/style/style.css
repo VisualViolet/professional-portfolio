@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee2dc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header and navigation styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  background-color: #ac3b61;
+  color: #123c69;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav a {
+  padding: 8px;
+  margin: 20px 20px 0 0;
+  color: #123c69;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li:hover {
+  transform: scale(1.2);
+}
+
+/* banner styling */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 150px;
+  margin-bottom: 25px;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h2 {
+  padding: 10px;
+  margin-right: 10px;
+  text-align: right;
+  background-color: #eee2dc;
+}
+
+.banner img {
+  width: 100px;
+  margin-right: 10px;
+  border: 3px solid #123c69;
+  border-radius: 5px;
+}
+
+/* styling to align about me, work, and contact sections with flexbox */
+.about-me,
+.work,
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  min-width: 40%;
+}
+
+.about-me h2,
+.work h2,
+.contact h2 {
+  min-width: 10%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.about-me aside,
+.contact aside {
+  padding: 2%;
+  border-left: solid 5px #123c69;
+  width: 90%;
+}
+
+.work aside {
+  padding: 2%;
+  border-left: solid 5px #ac3b61;
+  width: 90%;
+}
+
+.about-me,
+.contact {
+  background-color: #edc7b7;
+}
+
+/* work styling using flexbox card layout */
+.work-container {
+  margin: 5px;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.row a {
+  text-decoration: none;
+  font-size: 26px;
+  padding: 10px;
+  border: 5px solid #ac3b61;
+  border-radius: 10px;
+  color: #eee2dc;
+}
+
+.main-card {
+  position: relative;
+  flex: 1;
+  max-width: 1030px;
+  height: 200px;
+  margin: 10px;
+  background-image: url(../images/tribute-page.jpg);
+  background-size: fill;
+  background-position: center;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  max-width: 490px;
+  height: 150px;
+  margin: 10px;
+}
+
+.card:hover,
+.main-card:hover {
+  opacity: 0.7;
+}
+
+/* contact link styling with flexbox */
+.contact ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #edc7b7;
+  background-color: #ac3b61;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.contact ul li a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* setting custom backgrounds for project cards*/
+#prework {
+  background-image: url(../images/prework-background.jpg);
+  background-position: center;
+}
+
+#refactor {
+  background-image: url(../images/refactor-background.jpg);
+  background-position: center;
+}
+
+#splash {
+  background-image: url(../images/splash-background.jpg);
+  background-position: center;
+}
+
+#cheat-sheet {
+  background-image: url(../images/cheatsheet-background.jpg);
+}
+
+/* media query for smaller screens*/
+@media (max-width: 575px) {
+  header {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  header nav ul {
+    padding-top: 20px;
+    min-height: 80px;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact ul {
+    flex-direction: column;
+  }
+
+  .contact ul li {
+    padding: 30px;
+    text-align: center;
+  }
+}

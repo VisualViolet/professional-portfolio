@@ -12,7 +12,7 @@ Fullscreen Webpage
 Small Screen Webpage
 ## Installation
 
-N/A
+No installation necessary! Please view my deployed page here: https://visualviolet.github.io/professional-portfolio/
 
 ## Usage
 

@@ -130,8 +130,10 @@ header nav ul li:hover {
   max-width: 1030px;
   height: 200px;
   margin: 10px;
-  background-image: url(../images/tribute-page.jpg);
-  background-size: fill;
+  background-image: url(../images/dont-wake-up.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #190944;
   background-position: center;
 }
 

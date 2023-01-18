@@ -4,12 +4,8 @@
 
 This professional portfolio showcases the skills I have learned the past week in the UW Coding Bootcamp. Using HTML, CSS, and advanced CSS techniques such as media queries and pseudo-elements, I have constructed a website from scratch containing my professional portfolio with completed projects. As I further my knowledge through bootcamp, I will add to this portfolio to use when interacting with potential employers.
 
-![portfolio full screen](./assets/images/completed-site-fs.png)
-Fullscreen Webpage
+![portfolio demo](https://github.com/VisualViolet/professional-portfolio/blob/main/assets/images/professional-portfolio-demo.gif)
 
-![portfolio small screen](./assets/images/completed-site-ss.png)
-
-Small Screen Webpage
 ## Installation
 
 No installation necessary! Please view my deployed page here: https://visualviolet.github.io/professional-portfolio/

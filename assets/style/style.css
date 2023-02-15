@@ -142,6 +142,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-weight: bold;
 }
 
 .card {
@@ -150,6 +151,7 @@ footer {
   max-width: 490px;
   height: 150px;
   margin: 10px;
+  font-weight: bold;
 }
 
 .card:hover,
@@ -186,9 +188,11 @@ footer {
 }
 
 /* setting custom backgrounds for project cards*/
-#prework {
-  background-image: url(../images/prework-background.jpg);
+#wildthorn {
+  background-image: url(../images/wta-img.jpg);
   background-position: center;
+  background-size: cover;
+  color: black;
 }
 
 #refactor {
